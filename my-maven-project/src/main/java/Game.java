@@ -11,29 +11,29 @@ enum GameState {
 class Game {
 
     public static void initialize(Entity zaratul, Player user) {
-        zaratul.speak("Hello there! You're the new adventurere, " + user.name + " from the village, right?");
-        zaratul.speak(
-                "I am Zaratul, the village chief. I heard your the last adventurer of the village, and now your leaving too. It saddens me.");
-        zaratul.speak("I hope you can do me and the village one last favor, before going on with your journey.");
-        zaratul.speak(
-                "Recently, some bandits have appeared in the grasslands. If all adventurers go out of the village, then it will be unprotected! I hope you can go exterminate them for good. ");
-        zaratul.speak("I will give you 10 bronze for it. Consider it your first quest on the path to glory.");
+//        zaratul.speak("Hello there! You're the new adventurere, " + user.name + " from the village, right?");
+  //      zaratul.speak(
+//                "I am Zaratul, the village chief. I heard your the last adventurer of the village, and now your leaving too. It saddens me.");
+//        zaratul.speak("I hope you can do me and the village one last favor, before going on with your journey.");
+//        zaratul.speak(
+//                "Recently, some bandits have appeared in the grasslands. If all adventurers go out of the village, then it will be unprotected! I hope you can go exterminate them for good. ");
+//        zaratul.speak("I will give you 10 bronze for it. Consider it your first quest on the path to glory.");
     }
 
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
         // System.out.println(args.length);
-        PrintTextOnScreen p = new PrintTextOnScreen();
-        System.out.print("Please enter your name: ");
-        String userName = p.takeInput();
+   //     PrintTextOnScreen p = new PrintTextOnScreen();
+   //     System.out.print("Please enter your name: ");
+   //     String userName = p.takeInput();
 
-        Player user = new Player(userName, p);
+     //   Player user = new Player(userName, p);
 
-        Entity zaratul = new Entity("zaratul", p);
+     //   Entity zaratul = new Entity("zaratul", p);
 
-        initialize(zaratul, user);
-        MapControl mc = new MapControl(p, user);
-        mc.start();
-
+  //      initialize(zaratul, user);
+ //       MapControl mc = new MapControl(p, user);
+  //      mc.start();
+	System.out.println("Hello");
         
     }
 
